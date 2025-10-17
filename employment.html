@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Employment - DIMAH Private Security Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/dimah-theme.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container">
+      <div class="logo">
+        <img src="images/dimahlogo.png" alt="DIMAH Private Security Services Logo">
+        <div class="logo-text">DIMAH Security</div>
+      </div>
+      <div class="contact-info">
+        <div class="contact-item"><i class="fas fa-phone"></i><div><strong>CALL US</strong><br><span>657-817-1790</span></div></div>
+        <div class="contact-item"><i class="fas fa-envelope"></i><div><strong>EMAIL US</strong><br><span>Info@dimahpss.com</span></div></div>
+        <div class="contact-item"><i class="fas fa-id-badge"></i><div><strong>PPO NUMBER</strong><br><span>122602</span></div></div>
+      </div>
+      <a href="contact.html" class="cta-button">Request a Quote</a>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-container">
+      <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="services.html">SERVICES</a></li>
+        <li><a href="employment.html" class="active">EMPLOYMENT</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero (consistent with other pages) -->
+  <section class="employment-hero">
+    <div class="container">
+      <h1>Join California’s Trusted Security Team</h1>
+      <p>We’re hiring licensed, professional security officers dedicated to keeping our communities safe.</p>
+    </div>
+  </section>
+
+  <!-- Requirements & Qualifications -->
+  <section class="employment-content">
+    <div class="container">
+      <div class="emp-grid">
+        <div class="emp-card fade-in">
+          <div class="emp-card-head">
+            <div class="emp-icon"><i class="fas fa-clipboard-check"></i></div>
+            <h2>Requirements</h2>
+          </div>
+          <ul class="emp-list">
+            <li>Regularly patrol to check for hazards, unlocked doors, and unauthorized persons.</li>
+            <li>Maintain detailed logs and complete incident reports.</li>
+            <li>Access control, visitor management, and enforcement of site regulations.</li>
+            <li>Respond to fire, medical, weather, and other emergencies.</li>
+            <li>Excellent customer service and communication skills.</li>
+            <li>Ability to work in various environments and lift up to 40 lbs.</li>
+          </ul>
+        </div>
+
+        <div class="emp-card fade-in">
+          <div class="emp-card-head">
+            <div class="emp-icon"><i class="fas fa-user-shield"></i></div>
+            <h2>Qualifications</h2>
+          </div>
+          <ul class="emp-list">
+            <li>Valid BSIS Guard Card (California).</li>
+            <li>21+ with a valid Driver’s License (where applicable).</li>
+            <li>Prior security experience preferred.</li>
+            <li>High school diploma or equivalent.</li>
+            <li>Background check & drug screening.</li>
+            <li>Ability to stand/walk for long periods.</li>
+          </ul>
+          <div class="hr-note"><i class="fas fa-user-tie"></i> For hiring inquiries, email <strong>HR@dimahpss.com</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Application Form -->
+  <section class="employment-form-section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Fill the Online Primary Application</h2>
+        <p>Please do not enter confidential information such as SSN, DOB, or ID numbers.</p>
+      </div>
+
+      <form class="application-form" action="mailto:HR@dimahpss.com" method="post" enctype="text/plain">
+        <!-- Name Row -->
+        <div class="grid-3">
+          <div class="form-group"><label>First Name *</label><input type="text" name="First Name" required></div>
+          <div class="form-group"><label>Middle Name</label><input type="text" name="Middle Name"></div>
+          <div class="form-group"><label>Last Name *</label><input type="text" name="Last Name" required></div>
+        </div>
+
+        <!-- Contact Row -->
+        <div class="grid-3">
+          <div class="form-group"><label>Email *</label><input type="email" name="Email" required></div>
+          <div class="form-group"><label>Phone *</label><input type="tel" name="Phone" required></div>
+          <div class="form-group">
+            <label>Gender</label>
+            <select name="Gender">
+              <option value="" selected>Choose…</option>
+              <option>Male</option><option>Female</option><option>Non-binary</option><option>Prefer not to say</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Address Rows -->
+        <div class="grid-3">
+          <div class="form-group"><label>Street Address</label><input type="text" name="Street Address"></div>
+          <div class="form-group"><label>Apartment</label><input type="text" name="Apartment"></div>
+          <div class="form-group"><label>City</label><input type="text" name="City"></div>
+        </div>
+
+        <div class="grid-3">
+          <div class="form-group"><label>State</label><input type="text" name="State"></div>
+          <div class="form-group"><label>Zip Code</label><input type="text" name="Zip Code"></div>
+          <div class="form-group"><label>Country</label><input type="text" name="Country"></div>
+        </div>
+
+        <!-- Emergency -->
+        <div class="grid-3">
+          <div class="form-group"><label>Emergency Cell</label><input type="tel" name="Emergency Cell"></div>
+          <div class="form-group"><label>Emergency Contact Name</label><input type="text" name="Emergency Contact Name"></div>
+          <div class="form-group"><label>Relationship</label><input type="text" name="Relationship"></div>
+        </div>
+
+        <!-- Credentials -->
+        <div class="grid-3">
+          <div class="form-group">
+            <label>Do you have a Guard Card?</label>
+            <div class="radio-row">
+              <label><input type="radio" name="Guard Card" value="Yes"> Yes</label>
+              <label><input type="radio" name="Guard Card" value="No"> No</label>
+            </div>
+          </div>
+          <div class="form-group"><label>Guard Card Expire Date</label><input type="date" name="Guard Card Expire Date"></div>
+          <div class="form-group">
+            <label>Do you have a Driver's License?</label>
+            <div class="radio-row">
+              <label><input type="radio" name="Driver License" value="Yes"> Yes</label>
+              <label><input type="radio" name="Driver License" value="No"> No</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <div class="form-group"><label>Driver License Expire Date</label><input type="date" name="Driver License Expire Date"></div>
+          <div class="form-group">
+            <label>Willing to work 6-hour shifts or less if offered?</label>
+            <div class="radio-row">
+              <label><input type="radio" name="6hr OK" value="Yes"> Yes</label>
+              <label><input type="radio" name="6hr OK" value="No"> No</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Willing to accept emergency call-outs after hours?</label>
+            <div class="radio-row">
+              <label><input type="radio" name="After-hours Call" value="Yes"> Yes</label>
+              <label><input type="radio" name="After-hours Call" value="No"> No</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Availability -->
+        <div class="grid-2">
+          <div class="form-group">
+            <label>Days Available</label>
+            <div class="checkbox-grid">
+              <label><input type="checkbox" name="Days Available" value="Monday"> Monday</label>
+              <label><input type="checkbox" name="Days Available" value="Tuesday"> Tuesday</label>
+              <label><input type="checkbox" name="Days Available" value="Wednesday"> Wednesday</label>
+              <label><input type="checkbox" name="Days Available" value="Thursday"> Thursday</label>
+              <label><input type="checkbox" name="Days Available" value="Friday"> Friday</label>
+              <label><input type="checkbox" name="Days Available" value="Saturday"> Saturday</label>
+              <label><input type="checkbox" name="Days Available" value="Sunday"> Sunday</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Desired Shift</label>
+            <div class="checkbox-grid">
+              <label><input type="checkbox" name="Desired Shift" value="Day"> Day Shift</label>
+              <label><input type="checkbox" name="Desired Shift" value="Swing"> Swing Shift</label>
+              <label><input type="checkbox" name="Desired Shift" value="Graveyard"> Graveyard Shift</label>
+              <label><input type="checkbox" name="Desired Shift" value="Weekend"> Weekend</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Notes -->
+        <div class="form-group">
+          <label>Anything else we should know?</label>
+          <textarea name="Notes" rows="4" placeholder="Certifications (e.g., Firearm, Baton, CPR), site preferences, availability notes…"></textarea>
+        </div>
+
+        <button type="submit" class="submit-gradient">Submit</button>
+        <p class="small-note">Submitting will open your email to send the application to <strong>HR@dimahpss.com</strong>.</p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <p>&copy; 2025 DIMAH Private Security Services. All rights reserved. | Licensed &amp; Insured |
+        Phone: 657-817-1790 | Email: Info@dimahpss.com | HR: HR@dimahpss.com | PPO: 122602</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
