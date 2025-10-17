@@ -1,264 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services - DIMAH Private Security Services</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services - DIMAH Private Security Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/dimah-theme.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="header-container">
-            <div class="logo">
-                <img src="images/dimahlogo.png" alt="DIMAH Private Security Services Logo">
-                <div class="logo-text">DIMAH Security</div>
-            </div>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <span>📞</span>
-                    <div>
-                        <strong>CALL US</strong><br>
-                        <span>+1 (555) 123-4567</span>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <span>✉️</span>
-                    <div>
-                        <strong>EMAIL US</strong><br>
-                        <span>info@dimahsecurity.com</span>
-                    </div>
-                </div>
-            </div>
-            <a href="contact.html" class="cta-button">Request a Quote</a>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container">
+      <div class="logo">
+        <img src="images/dimahlogo.png" alt="DIMAH Private Security Services Logo">
+        <div class="logo-text">DIMAH Security</div>
+      </div>
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <div><strong>CALL US</strong><br><span>657-817-1790</span></div>
         </div>
-    </header>
-
-    <!-- Navigation -->
-    <nav class="nav">
-        <div class="nav-container">
-            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="services.html" class="active">SERVICES</a></li>
-                <li><a href="about.html">ABOUT US</a></li>
-                <li><a href="contact.html">CONTACT US</a></li>
-            </ul>
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <div><strong>EMAIL US</strong><br><span>Info@dimahpss.com</span></div>
         </div>
-    </nav>
-
-    <!-- Hero -->
-    <section class="services-hero">
-        <div class="container">
-            <h1>Our Security Services</h1>
-            <p>Comprehensive protection solutions tailored to your specific needs.</p>
+        <div class="contact-item">
+          <i class="fas fa-id-badge"></i>
+          <div><strong>PPO NUMBER</strong><br><span>122602</span></div>
         </div>
-    </section>
+      </div>
+      <a href="contact.html" class="cta-button">Request a Quote</a>
+    </div>
+  </header>
 
-<!-- Industries We Serve -->
-<section class="industries-section">
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-container">
+      <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="services.html" class="active">SERVICES</a></li>
+        <li><a href="employment.html">EMPLOYMENT</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="services-hero">
     <div class="container">
-        <div class="section-title">
-            <h2>Industries We Serve</h2>
-            <p>Tailored security solutions for a wide range of industries</p>
-        </div>
-        <div class="industries-grid">
-            <a href="images/security1.jpeg" class="industry-card" style="background-image: url('images/placeholders/corporate.jpg');">
-                <div class="industry-overlay">
-                    <h3>Corporate Offices</h3>
-                    <p>Professional protection for office buildings & employees.</p>
-                </div>
-            </a>
-            <a href="industries/retail.html" class="industry-card" style="background-image: url('images/placeholders/retail.jpg');">
-                <div class="industry-overlay">
-                    <h3>Retail & Shopping Centers</h3>
-                    <p>Keeping customers, staff, and merchandise safe.</p>
-                </div>
-            </a>
-            <a href="industries/industrial.html" class="industry-card" style="background-image: url('images/placeholders/industrial.jpg');">
-                <div class="industry-overlay">
-                    <h3>Industrial & Manufacturing</h3>
-                    <p>Securing plants, warehouses, and production facilities.</p>
-                </div>
-            </a>
-            <a href="industries/education.html" class="industry-card" style="background-image: url('images/placeholders/education.jpg');">
-                <div class="industry-overlay">
-                    <h3>Schools & Universities</h3>
-                    <p>Creating safe environments for students & staff.</p>
-                </div>
-            </a>
-            <a href="industries/healthcare.html" class="industry-card" style="background-image: url('images/placeholders/healthcare.jpg');">
-                <div class="industry-overlay">
-                    <h3>Healthcare & Hospitals</h3>
-                    <p>Protecting patients, staff, and critical assets.</p>
-                </div>
-            </a>
-            <a href="industries/events.html" class="industry-card" style="background-image: url('images/placeholders/events.jpg');">
-                <div class="industry-overlay">
-                    <h3>Events & Entertainment</h3>
-                    <p>Managing crowds & ensuring safe experiences.</p>
-                </div>
-            </a>
-            <a href="industries/construction.html" class="industry-card" style="background-image: url('images/placeholders/construction.jpg');">
-                <div class="industry-overlay">
-                    <h3>Construction Sites</h3>
-                    <p>Preventing theft and ensuring worker safety.</p>
-                </div>
-            </a>
-            <a href="industries/residential.html" class="industry-card" style="background-image: url('images/placeholders/residential.jpg');">
-                <div class="industry-overlay">
-                    <h3>Residential Communities</h3>
-                    <p>Dedicated security for homes & gated communities.</p>
-                </div>
-            </a>
-            <a href="industries/logistics.html" class="industry-card" style="background-image: url('images/placeholders/logistics.jpg');">
-                <div class="industry-overlay">
-                    <h3>Logistics & Warehousing</h3>
-                    <p>Safeguarding supply chains and inventory.</p>
-                </div>
-            </a>
-            <a href="industries/hospitality.html" class="industry-card" style="background-image: url('images/placeholders/hospitality.jpg');">
-                <div class="industry-overlay">
-                    <h3>Hospitality & Casinos</h3>
-                    <p>Protecting guests and ensuring smooth operations.</p>
-                </div>
-            </a>
-            <a href="industries/financial.html" class="industry-card" style="background-image: url('images/placeholders/financial.jpg');">
-                <div class="industry-overlay">
-                    <h3>Financial Institutions</h3>
-                    <p>Advanced protection for banks & offices.</p>
-                </div>
-            </a>
-            <a href="industries/government.html" class="industry-card" style="background-image: url('images/placeholders/government.jpg');">
-                <div class="industry-overlay">
-                    <h3>Government & Public Sector</h3>
-                    <p>Trusted security for government facilities.</p>
-                </div>
-            </a>
-        </div>
+      <h1>Our Security Services</h1>
+      <p>Comprehensive protection solutions tailored to your specific needs.</p>
     </div>
-</section>
+  </section>
 
+  <!-- Industries We Serve (unchanged structure) -->
+  <section class="industries-section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Industries We Serve</h2>
+        <p>Tailored security solutions for a wide range of industries</p>
+      </div>
+      <div class="industries-grid">
+        <a href="images/corprate.jpg" class="industry-card" style="background-image:url('images/corprate.jpg');">
+          <div class="industry-overlay"><h3>Corporate Offices</h3><p>Professional protection for office buildings & employees.</p></div>
+        </a>
+        <a href="industries/retail.html" class="industry-card" style="background-image:url('images/shopping.jpg');">
+          <div class="industry-overlay"><h3>Retail & Shopping Centers</h3><p>Keeping customers, staff, and merchandise safe.</p></div>
+        </a>
+        <a href="industries/industrial.html" class="industry-card" style="background-image:url('images/industrial.jpg');">
+          <div class="industry-overlay"><h3>Industrial & Manufacturing</h3><p>Securing plants, warehouses, and production facilities.</p></div>
+        </a>
+        <a href="industries/education.html" class="industry-card" style="background-image:url('images/university.webp');">
+          <div class="industry-overlay"><h3>Schools & Universities</h3><p>Creating safe environments for students & staff.</p></div>
+        </a>
+        <a href="industries/healthcare.html" class="industry-card" style="background-image:url('images/hospital.jpg');">
+          <div class="industry-overlay"><h3>Healthcare & Hospitals</h3><p>Protecting patients, staff, and critical assets.</p></div>
+        </a>
+        <a href="industries/events.html" class="industry-card" style="background-image:url('images/events.jpg');">
+          <div class="industry-overlay"><h3>Events & Entertainment</h3><p>Managing crowds & ensuring safe experiences.</p></div>
+        </a>
+        <a href="industries/construction.html" class="industry-card" style="background-image:url('images/construction.jpg');">
+          <div class="industry-overlay"><h3>Construction Sites</h3><p>Preventing theft and ensuring worker safety.</p></div>
+        </a>
+        <a href="industries/residential.html" class="industry-card" style="background-image:url('images/residential.jpg');">
+          <div class="industry-overlay"><h3>Residential Communities</h3><p>Dedicated security for homes & gated communities.</p></div>
+        </a>
+        <a href="industries/logistics.html" class="industry-card" style="background-image:url('images/warehouse.webp');">
+          <div class="industry-overlay"><h3>Logistics & Warehousing</h3><p>Safeguarding supply chains and inventory.</p></div>
+        </a>
+        <a href="industries/hospitality.html" class="industry-card" style="background-image:url('images/casino.avif');">
+          <div class="industry-overlay"><h3>Hospitality & Casinos</h3><p>Protecting guests and ensuring smooth operations.</p></div>
+        </a>
+        <a href="industries/financial.html" class="industry-card" style="background-image:url('images/bank.png');">
+          <div class="industry-overlay"><h3>Financial Institutions</h3><p>Advanced protection for banks & offices.</p></div>
+        </a>
+        <a href="industries/government.html" class="industry-card" style="background-image:url('images/govt.jpeg');">
+          <div class="industry-overlay"><h3>Government & Public Sector</h3><p>Trusted security for government facilities.</p></div>
+        </a>
+      </div>
+    </div>
+  </section>
 
-    <!-- Services Section (Redesigned Cards) -->
-    <section class="services-list">
-        <div class="container">
-            <div class="section-title">
-                <h2>Our Security Services</h2>
-                <p>Trusted protection, tailored to your exact needs</p>
-            </div>
-
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-user-shield"></i></div>
-                    <h3>Uniformed Security Guards</h3>
-                    <p>Licensed, professional guards providing a strong presence to deter threats and protect people & property.</p>
-                    <a href="contact.html" class="btn-link">Learn More</a>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-car"></i></div>
-                    <h3>Mobile Patrols</h3>
-                    <p>Cost-effective patrol units covering large areas, ensuring rapid response and proactive checks.</p>
-                    <a href="contact.html" class="btn-link">Learn More</a>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-calendar-check"></i></div>
-                    <h3>Event Security</h3>
-                    <p>Expert crowd control, access management, and safety assurance for events of all sizes.</p>
-                    <a href="contact.html" class="btn-link">Learn More</a>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-video"></i></div>
-                    <h3>Surveillance Solutions</h3>
-                    <p>Advanced video monitoring systems with 24/7 oversight to detect and address risks immediately.</p>
-                    <a href="contact.html" class="btn-link">Learn More</a>
-                </div>
-            </div>
+  <!-- Services Cards -->
+  <section class="services-list">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Security Services</h2>
+        <p>Trusted protection, tailored to your exact needs</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-user-shield"></i></div>
+          <h3>Uniformed Security Guards</h3>
+          <p>Licensed, professional guards providing a strong presence to deter threats and protect people & property.</p>
+          <a href="contact.html" class="btn-link">Learn More</a>
         </div>
-    </section>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-car"></i></div>
+          <h3>Mobile Patrols</h3>
+          <p>Cost-effective patrol units covering large areas, ensuring rapid response and proactive checks.</p>
+          <a href="contact.html" class="btn-link">Learn More</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-calendar-check"></i></div>
+          <h3>Event Security</h3>
+          <p>Expert crowd control, access management, and safety assurance for events of all sizes.</p>
+          <a href="contact.html" class="btn-link">Learn More</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-video"></i></div>
+          <h3>Surveillance Solutions</h3>
+          <p>Advanced video monitoring systems with 24/7 oversight to detect and address risks immediately.</p>
+          <a href="contact.html" class="btn-link">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    
-
-    <!-- Areas We Serve -->
-<section class="areas-serve">
+  <!-- Areas We Serve -->
+  <section class="areas-serve">
     <div class="container areas-grid">
-        <!-- Map Image -->
-        <div class="areas-map">
-            <img src="images/california-map.png" alt="California map with highlighted counties">
-        </div>
-        <!-- Text Content -->
-        <div class="areas-content">
-            <h2>Areas We Serve</h2>
-            <p>
-                DIMAH Security proudly provides professional security services across the entire state of California.
-                Our team is licensed and insured to operate in every county, ensuring businesses, communities, and events
-                receive the highest level of protection.
-            </p>
-            <p><strong>Counties We Serve:</strong></p>
-            <ul>
-                <li>Los Angeles County</li>
-                <li>Orange County</li>
-                <li>San Diego County</li>
-                <li>Riverside County</li>
-                <li>San Bernardino County</li>
-                <li>Ventura County</li>
-                <li>Santa Barbara County</li>
-                <li>Sacramento County</li>
-                <li>Fresno County</li>
-                <li>And all other counties in California</li>
-            </ul>
-        </div>
+      <div class="areas-map">
+        <img src="images/california-map.png" alt="California map with highlighted counties">
+      </div>
+      <div class="areas-content">
+        <h2>Areas We Serve</h2>
+        <p>DIMAH Security proudly provides professional security services across the entire state of California. Our team is licensed and insured to operate in every county, ensuring businesses, communities, and events receive the highest level of protection.</p>
+        <p><strong>Counties We Serve:</strong></p>
+        <ul>
+          <li>Los Angeles County</li>
+          <li>Orange County</li>
+          <li>San Diego County</li>
+          <li>Riverside County</li>
+          <li>San Bernardino County</li>
+          <li>Ventura County</li>
+          <li>Santa Barbara County</li>
+          <li>Sacramento County</li>
+          <li>Fresno County</li>
+          <li>And all other counties in California</li>
+        </ul>
+      </div>
     </div>
-</section>
+  </section>
 
+  <footer class="footer">
+    <div class="footer-container">
+      <p>&copy; 2025 DIMAH Private Security Services. All rights reserved. | Licensed &amp; Insured |
+        Phone: 657-817-1790 | Email: Info@dimahpss.com | HR: HR@dimahpss.com | PPO: 122602</p>
+    </div>
+  </footer>
 
-
-
-    <!-- Why Choose Us -->
-    <section class="why-choose-us">
-        <div class="container">
-            <div class="section-title">
-                <h2>Why Choose DIMAH Security?</h2>
-                <p>Unparalleled protection from a team you can trust.</p>
-            </div>
-            <div class="features-grid">
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fa fa-user-shield" aria-hidden="true"></i>
-                    </div>
-                    <h3>Experienced Professionals</h3>
-                    <p>Our guards are highly trained, licensed, and dedicated to your safety.</p>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fa fa-cogs" aria-hidden="true"></i>
-                    </div>
-                    <h3>Customized Solutions</h3>
-                    <p>We tailor our security services to meet your unique needs and budget.</p>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fa fa-bolt" aria-hidden="true"></i>
-                    </div>
-                    <h3>Rapid Response</h3>
-                    <p>Our 24/7 monitoring and mobile patrols ensure swift action when it matters most.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-container">
-            <p>&copy; 2025 DIMAH Private Security Services. All rights reserved. | Licensed & Insured</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
