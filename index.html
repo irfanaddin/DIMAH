@@ -1,159 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DIMAH Private Security Services - Professional Security Solutions</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DIMAH Private Security Services - Professional Security Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/dimah-theme.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <header class="header">
-        <div class="header-container">
-            <div class="logo">
-                <img src="images/dimahlogo.png" alt="DIMAH Private Security Services Logo">
-                <div class="logo-text">DIMAH Security</div>
-            </div>
-            
-            <div class="contact-info">
-                <div class="contact-item">
-                    <span>📞</span>
-                    <div>
-                        <strong>CALL US</strong><br>
-                        <span>+1 (555) 123-4568</span>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <span>✉️</span>
-                    <div>
-                        <strong>EMAIL US</strong><br>
-                        <span>info@dimahsecurity.com</span>
-                    </div>
-                </div>
-            </div>
-            
-            <a href="contact.html" class="cta-button">Request a Quote</a>
-        </div>
-    </header>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container">
+      <div class="logo">
+        <img src="images/dimahlogo.png" alt="DIMAH Private Security Services Logo">
+        <div class="logo-text">DIMAH Security</div>
+      </div>
 
-    <nav class="nav">
-        <div class="nav-container">
-            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="services.html">SERVICES</a></li>
-                <li><a href="about.html">ABOUT US</a></li>
-                <li><a href="contact.html">CONTACT US</a></li>
-            </ul>
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <div>
+            <strong>CALL US</strong><br>
+            <span>657-817-1790</span>
+          </div>
         </div>
-    </nav>
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <strong>EMAIL US</strong><br>
+            <span>Info@dimahpss.com</span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-id-badge"></i>
+          <div>
+            <strong>PPO NUMBER</strong><br>
+            <span>122602</span>
+          </div>
+        </div>
+      </div>
 
-    <!-- Hero Section with Slideshow -->
-    <section class="hero" id="home">
-        <div class="hero-slideshow">
-            <img src="images/security1.jpeg" class="active" alt="Security team">
-            <img src="images/security2.jpeg" alt="Monitoring center">
-            <img src="images/security3.jpeg" alt="Event security">
-        </div>
-        <div class="hero-container">
-            <h1 class="fade-in">Your Trusted <span class="highlight">Private Security</span> Partner</h1>
-            <p class="fade-in">Expert solutions with professional guards, advanced monitoring, and comprehensive protection for your peace of mind.</p>
-            <div class="hero-buttons fade-in">
-                <a href="contact.html" class="btn-primary">Get a Free Quote</a>
-                <a href="about.html" class="btn-secondary">Learn More</a>
-            </div>
-        </div>
-    </section>
+      <a href="contact.html" class="cta-button">Request a Quote</a>
+    </div>
+  </header>
 
-    <section class="why-choose-us">
-        <div class="container">
-            <div class="section-title">
-                <h2>Why Choose DIMAH Security?</h2>
-                <p>Unparalleled protection from a team you can trust.</p>
-            </div>
-            <div class="features-grid">
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fa fa-user-shield" aria-hidden="true"></i>
-                    </div>
-                    <h3>Experienced Professionals</h3>
-                    <p>Our guards are highly trained, licensed, and dedicated to your safety.</p>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fa fa-cogs" aria-hidden="true"></i>
-                    </div>
-                    <h3>Customized Solutions</h3>
-                    <p>We tailor our security services to meet your unique needs and budget.</p>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fa fa-bolt" aria-hidden="true"></i>
-                    </div>
-                    <h3>Rapid Response</h3>
-                    <p>Our 24/7 monitoring and mobile patrols ensure swift action when it matters most.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    
-    <section class="services" id="services">
-        <div class="services-container">
-            <div class="section-title">
-                <h2>Our Security Services</h2>
-                <p>Comprehensive protection solutions tailored to your specific needs</p>
-            </div>
-            
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">🛡️</div>
-                    <h3>Mobile Patrols</h3>
-                    <p>Our mobile patrol units provide visible deterrence and rapid response across your property. Whether it’s after-hours monitoring, random inspections, or lock-up services, our patrol officers ensure consistent coverage and peace of mind.</p>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">👮</div>
-                    <h3>Uniformed Security Guards</h3>
-                    <p>Professional, highly trained, and uniformed guards are available for commercial, residential, and industrial sites. Our team specializes in access control, customer service, and maintaining a safe environment for employees, clients, and visitors.</p>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">🏢</div>
-                    <h3>Event Security</h3>
-                    <p>From small gatherings to large public events, our event security officers manage crowd control, entry points, and emergency protocols. We help your event run smoothly while keeping guests safe and operations compliant with regulations.</p>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">📹</div>
-                    <h3>Surveillance Solutions</h3>
-                    <p>We provide advanced surveillance solutions, including CCTV monitoring, remote video verification, and tailored camera systems. Our technology-backed services give you real-time insights and continuous oversight of your property.</p>
-                </div>
-            </div>
-            <div style="text-align: center; margin-top: 2rem;">
-                <a href="services.html" class="btn-primary">View All Services</a>
-            </div>
-        </div>
-    </section>
-    
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-container">
+      <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="services.html">SERVICES</a></li>
+        <li><a href="employment.html">EMPLOYMENT</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+      </ul>
+    </div>
+  </nav>
 
+  <!-- Hero with Slideshow -->
+  <section class="hero" id="home">
+    <div class="hero-slideshow">
+      <img src="images/security1.jpeg" class="active" alt="Security team">
+      <img src="images/security2.jpeg" alt="Monitoring center">
+      <img src="images/security3.jpeg" alt="Event security">
+    </div>
+    <div class="hero-container">
+      <h1 class="fade-in">Your Trusted <span class="highlight">Private Security</span> Partner</h1>
+      <p class="fade-in">Expert solutions with professional guards, advanced monitoring, and comprehensive protection for your peace of mind.</p>
+      <div class="hero-buttons fade-in">
+        <a href="contact.html" class="btn-primary">Get a Free Quote</a>
+        <a href="about.html" class="btn-secondary">Learn More</a>
+      </div>
+    </div>
+  </section>
 
-    <section class="cta-section">
-        <div class="container">
-            <h2>Ready to Secure Your Future?</h2>
-            <p>Contact us today for a free, no-obligation security assessment.</p><br><br>
-            <a href="contact.html" class="btn-primary">Request a Consultation</a>
+  <section class="why-choose-us">
+    <div class="container">
+      <div class="section-title">
+        <h2>Why Choose DIMAH Security?</h2>
+        <p>Unparalleled protection from a team you can trust.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fa fa-user-shield" aria-hidden="true"></i></div>
+          <h3>Experienced Professionals</h3>
+          <p>Our guards are highly trained, licensed, and dedicated to your safety.</p>
         </div>
-    </section>
-
-    <footer class="footer">
-        <div class="footer-container">
-            <p>&copy; 2025 DIMAH Private Security Services. All rights reserved. | Licensed & Insured</p>
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fa fa-cogs" aria-hidden="true"></i></div>
+          <h3>Customized Solutions</h3>
+          <p>We tailor our security services to meet your unique needs and budget.</p>
         </div>
-    </footer>
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fa fa-bolt" aria-hidden="true"></i></div>
+          <h3>Rapid Response</h3>
+          <p>Our 24/7 monitoring and mobile patrols ensure swift action when it matters most.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <section class="services" id="services">
+    <div class="services-container">
+      <div class="section-title">
+        <h2>Our Security Services</h2>
+        <p>Comprehensive protection solutions tailored to your specific needs</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">🛡️</div>
+          <h3>Mobile Patrols</h3>
+          <p>Our mobile patrol units provide visible deterrence and rapid response across your property. Whether it’s after-hours monitoring, random inspections, or lock-up services, our patrol officers ensure consistent coverage and peace of mind.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">👮</div>
+          <h3>Uniformed Security Guards</h3>
+          <p>Professional, highly trained, and uniformed guards are available for commercial, residential, and industrial sites. Our team specializes in access control, customer service, and maintaining a safe environment for employees, clients, and visitors.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🏢</div>
+          <h3>Event Security</h3>
+          <p>From small gatherings to large public events, our event security officers manage crowd control, entry points, and emergency protocols. We help your event run smoothly while keeping guests safe and operations compliant with regulations.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">📹</div>
+          <h3>Surveillance Solutions</h3>
+          <p>We provide advanced surveillance solutions, including CCTV monitoring, remote video verification, and tailored camera systems. Our technology-backed services give you real-time insights and continuous oversight of your property.</p>
+        </div>
+      </div>
+
+      <div style="text-align:center;margin-top:2rem;">
+        <a href="services.html" class="btn-primary">View All Services</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2>Ready to Secure Your Future?</h2>
+      <p>Contact us today for a free, no-obligation security assessment.</p><br><br>
+      <a href="contact.html" class="btn-primary">Request a Consultation</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <p>&copy; 2025 DIMAH Private Security Services. All rights reserved. | Licensed &amp; Insured |
+        Phone: 657-817-1790 | Email: Info@dimahpss.com | HR: HR@dimahpss.com | PPO: 122602</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
