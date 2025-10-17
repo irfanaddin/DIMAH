@@ -1051,3 +1051,193 @@ body {
     opacity: 1;
   }
 }
+
+/* ============================
+   Global polish & consistency
+============================ */
+.header.scrolled {
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: saturate(180%) blur(6px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  }
+  
+  /* Align active nav state with accent */
+  .nav-menu a.active {
+    background: rgba(251, 191, 36, 0.15);
+  }
+  
+  /* Normalize section spacing on all pages */
+  section { scroll-margin-top: 110px; }
+  
+  /* ============================
+     Employment page styles
+  ============================ */
+  .employment-hero {
+    background: linear-gradient(rgba(30, 27, 75, 0.82), rgba(30, 27, 75, 0.82)),
+                url('images/security2.jpeg') center/cover no-repeat;
+    padding: 5rem 0;
+    color: #fff;
+    text-align: center;
+  }
+  .employment-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .employment-content {
+    padding: 5rem 0;
+    background: #fff;
+  }
+  .emp-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .emp-card {
+    background: #f8fafc;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    transition: transform .3s ease, box-shadow .3s ease, background .3s ease, color .3s ease;
+  }
+  .emp-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 32px rgba(0,0,0,0.10);
+    background: #1e1b4b;
+    color: #fff;
+  }
+  .emp-card-head {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+  .emp-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: #1e1b4b;
+    color: #fff;
+    font-size: 1.25rem;
+    transition: background .3s ease, color .3s ease;
+  }
+  .emp-card:hover .emp-icon {
+    background: #fbbf24;
+    color: #1e1b4b;
+  }
+  .emp-card h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    margin: 0;
+  }
+  .emp-list {
+    margin-top: 0.75rem;
+    padding-left: 1.1rem;
+    display: grid;
+    gap: 0.5rem;
+  }
+  .emp-list li {
+    line-height: 1.6;
+  }
+  
+  /* HR note chip */
+  .hr-note {
+    margin-top: 1.25rem;
+    padding: 0.75rem 1rem;
+    background: rgba(251,191,36,0.15);
+    border: 1px solid rgba(251,191,36,0.35);
+    border-radius: 10px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  /* Application form (consistent with contact form visuals) */
+  .employment-form-section {
+    padding: 5rem 0;
+    background: #f8fafc;
+  }
+  .application-form {
+    background: #fff;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    display: grid;
+    gap: 1.25rem;
+  }
+  .application-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  .application-form label {
+    font-weight: 600;
+    color: #333;
+  }
+  .application-form input,
+  .application-form select,
+  .application-form textarea {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color .25s ease, box-shadow .25s ease;
+    background: #fff;
+  }
+  .application-form input:focus,
+  .application-form select:focus,
+  .application-form textarea:focus {
+    outline: none;
+    border-color: #1e1b4b;
+    box-shadow: 0 0 0 4px rgba(30,27,75,0.12);
+  }
+  
+  /* Utility grids */
+  .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+  .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+  
+  .radio-row, .checkbox-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.25rem;
+  }
+  .checkbox-grid label,
+  .radio-row label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .submit-gradient {
+    background: linear-gradient(135deg, #fbbf24, #f59e0b);
+    color: #fff;
+    padding: 0.95rem 1.25rem;
+    border: 0;
+    border-radius: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform .25s ease, box-shadow .25s ease;
+  }
+  .submit-gradient:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  }
+  .small-note {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  /* Responsive */
+  @media (max-width: 992px) {
+    .emp-grid { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 768px) {
+    .grid-2 { grid-template-columns: 1fr; }
+    .grid-3 { grid-template-columns: 1fr; }
+  }
+  
