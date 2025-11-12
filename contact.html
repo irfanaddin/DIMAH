@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us - DIMAH Private Security Services</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="css/dimah-theme.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta name="format-detection" content="telephone=no">
 </head>
 <body>
+  <!-- Header -->
   <header class="header">
     <div class="header-container">
       <div class="logo">
-        <img src="images/dimahlogo.png" alt="DIMAH Private Security Services Logo">
-        <div class="logo-text">DIMAH Private Security Services</div>
+        <img src="images/newdimahlogo.png" alt="DIMAH Private Security Services Logo">
       </div>
       <div class="contact-info">
         <div class="contact-item">
@@ -35,6 +35,7 @@
     </div>
   </header>
 
+  <!-- Navigation -->
   <nav class="nav">
     <div class="nav-container">
       <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
@@ -43,21 +44,31 @@
         <li><a href="services.html">SERVICES</a></li>
         <li><a href="employment.html">EMPLOYMENT</a></li>
         <li><a href="about.html">ABOUT US</a></li>
-        <li><a href="contact.html" class="active">CONTACT US</a></li>
+        <li><a class="active" href="contact.html">CONTACT US</a></li>
       </ul>
     </div>
   </nav>
 
-  <section class="contact-hero">
-    <div class="container">
-      <h1>Get in Touch</h1>
-      <p>We're here to help. Contact us today to discuss your security needs.</p>
+  <!-- Shared Hero Slideshow with page title -->
+  <section class="hero">
+    <div class="hero-slideshow">
+      <!-- Flags first, then security 1/2/3 -->
+      <img src="images/flags.jpg" class="active" alt="California and American flags">
+      <img src="images/security1.jpeg" alt="Security team">
+      <img src="images/security2.jpeg" alt="Monitoring center">
+      <img src="images/security3.jpeg" alt="Event security">
+    </div>
+    <div class="hero-container">
+      <h1 class="fade-in">Get in <span class="highlight">Touch</span></h1>
+      <p class="fade-in">We're here to help. Contact us today to discuss your security needs.</p>
     </div>
   </section>
 
+  <!-- Contact -->
   <section class="contact-form-section">
     <div class="container">
       <div class="contact-form-container">
+        <!-- Left column: details + map -->
         <div class="contact-details">
           <h2>Contact Information</h2>
           <p>Fill out the form and our team will get back to you within 24 hours.</p>
@@ -67,17 +78,52 @@
             <li><i class="fas fa-id-badge"></i> PPO 122602</li>
             <li><i class="fas fa-map-marker-alt"></i> 17702 Mitchell N #210, Irvine, CA 92614</li>
           </ul>
-          <div class="map-container">
-            <iframe src="https://www.google.com/maps/place/17702+Mitchell+N+%23210,+Irvine,+CA+92614/data=!4m2!3m1!1s0x80dcdec16dbaaab5:0xb3c836a7cf8f2b84?sa=X&ved=1t:242&ictx=111" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+          <!-- Fixed-location Google Map -->
+          <div class="map-container" aria-label="Map showing our location at 17702 Mitchell N #210, Irvine, CA 92614">
+            <iframe
+              title="DIMAH Private Security Services - Irvine Office Map"
+              width="100%"
+              height="250"
+              style="border:0;"
+              loading="lazy"
+              allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=17702+Mitchell+N+%23210,+Irvine,+CA+92614&hl=en&z=16&output=embed">
+            </iframe>
           </div>
+
+          <!-- Directions button (opens exact address in Google Maps) -->
+          <p style="margin-top:0.75rem;">
+            <a
+              class="btn-secondary"
+              href="https://www.google.com/maps?daddr=17702+Mitchell+N+%23210,+Irvine,+CA+92614"
+              target="_blank"
+              rel="noopener"
+              aria-label="Open Google Maps directions to 17702 Mitchell N #210, Irvine, CA 92614">
+              Get Directions
+            </a>
+          </p>
         </div>
+
+        <!-- Right column: form -->
         <div class="contact-form">
           <form>
-            <div class="form-group"><label for="name">Name</label><input type="text" id="name" name="name" required></div>
-            <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" required></div>
-            <div class="form-group"><label for="phone">Phone (Optional)</label><input type="tel" id="phone" name="phone"></div>
-            <div class="form-group"><label for="subject">Subject</label><input type="text" id="subject" name="subject" required></div>
-            <div class="form-group"><label for="message">Message</label><textarea id="message" name="message" rows="5" required></textarea></div>
+            <div class="form-group">
+              <label for="name">Name</label><input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label><input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone (Optional)</label><input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label><input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label><textarea id="message" name="message" rows="5" required></textarea>
+            </div>
             <button type="submit" class="btn-primary">Send Message</button>
           </form>
         </div>
@@ -85,6 +131,7 @@
     </div>
   </section>
 
+  <!-- FAQ (fixed accordion) -->
   <section class="faq-section">
     <div class="container">
       <div class="section-title"><h2>Frequently Asked Questions</h2></div>
@@ -92,25 +139,26 @@
         <div class="faq-item">
           <button class="faq-question">What services do you offer?</button>
           <div class="faq-answer">
-            <p>We offer a comprehensive range of security services including uniformed guards, mobile patrols, event security, and advanced surveillance solutions. Visit our <a href="services.html">services page</a> for more details.</p>
+            <p>We offer uniformed guards, mobile patrols, event security, and surveillance solutions. Visit our <a href="services.html">services page</a> for more details.</p>
           </div>
         </div>
         <div class="faq-item">
           <button class="faq-question">How can I get a quote?</button>
           <div class="faq-answer">
-            <p>You can request a free, no-obligation quote by filling out the contact form on this page, calling us at 657-817-1790, or emailing us at Info@dimahpss.com.</p>
+            <p>Request a free quote by filling out the contact form, calling 657-817-1790, or emailing Info@dimahpss.com.</p>
           </div>
         </div>
         <div class="faq-item">
           <button class="faq-question">Are your security guards licensed and insured?</button>
           <div class="faq-answer">
-            <p>Yes, all of our security personnel are fully licensed, insured, and undergo rigorous training to ensure the highest level of professionalism and expertise.</p>
+            <p>Yes—our personnel are licensed, insured, and rigorously trained for professionalism and expertise.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer class="footer">
     <div class="footer-container">
       <p>&copy; 2025 DIMAH Private Security Services. All rights reserved. | Licensed &amp; Insured |
@@ -119,17 +167,5 @@
   </footer>
 
   <script src="script.js"></script>
-  <script>
-    // FAQ Accordion
-    const faqQuestions = document.querySelectorAll('.faq-question');
-    faqQuestions.forEach(q => {
-      q.addEventListener('click', () => {
-        const ans = q.nextElementSibling;
-        const item = q.parentElement;
-        item.classList.toggle('active');
-        ans.style.maxHeight = ans.style.maxHeight ? null : ans.scrollHeight + 'px';
-      });
-    });
-  </script>
 </body>
 </html>
