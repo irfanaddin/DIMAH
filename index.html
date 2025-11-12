@@ -6,7 +6,6 @@
   <title>DIMAH Private Security Services - Professional Security Solutions</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="css/dimah-theme.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
@@ -15,8 +14,7 @@
   <header class="header">
     <div class="header-container">
       <div class="logo">
-        <img src="images/dimahlogo.png" alt="DIMAH Private Security Services Logo">
-        <div class="logo-text">DIMAH Private Security Services</div>
+        <img src="images/newdimahlogo.png" alt="DIMAH Private Security Services Logo">
       </div>
 
       <div class="contact-info">
@@ -52,7 +50,7 @@
     <div class="nav-container">
       <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
       <ul class="nav-menu" id="navMenu">
-        <li><a href="index.html">HOME</a></li>
+        <li><a class="active" href="index.html">HOME</a></li>
         <li><a href="services.html">SERVICES</a></li>
         <li><a href="employment.html">EMPLOYMENT</a></li>
         <li><a href="about.html">ABOUT US</a></li>
@@ -61,10 +59,11 @@
     </div>
   </nav>
 
-  <!-- Hero with Slideshow -->
-  <section class="hero" id="home">
+  <!-- Shared Hero Slideshow (flags first) -->
+  <section class="hero">
     <div class="hero-slideshow">
-      <img src="images/security1.jpeg" class="active" alt="Security team">
+      <img src="images/flags.jpg" class="active" alt="California and American flags">
+      <img src="images/security1.jpeg" alt="Security team">
       <img src="images/security2.jpeg" alt="Monitoring center">
       <img src="images/security3.jpeg" alt="Event security">
     </div>
@@ -115,25 +114,25 @@
         <div class="service-card">
           <div class="service-icon">🛡️</div>
           <h3>Mobile Patrols</h3>
-          <p>Our mobile patrol units provide visible deterrence and rapid response across your property. Whether it’s after-hours monitoring, random inspections, or lock-up services, our patrol officers ensure consistent coverage and peace of mind.</p>
+          <p>Visible deterrence and rapid response across your property.</p>
         </div>
 
         <div class="service-card">
           <div class="service-icon">👮</div>
           <h3>Uniformed Security Guards</h3>
-          <p>Professional, highly trained, and uniformed guards are available for commercial, residential, and industrial sites. Our team specializes in access control, customer service, and maintaining a safe environment for employees, clients, and visitors.</p>
+          <p>Access control, customer service, and a safe environment for everyone.</p>
         </div>
 
         <div class="service-card">
           <div class="service-icon">🏢</div>
           <h3>Event Security</h3>
-          <p>From small gatherings to large public events, our event security officers manage crowd control, entry points, and emergency protocols. We help your event run smoothly while keeping guests safe and operations compliant with regulations.</p>
+          <p>Crowd control, entry points, and emergency protocol management.</p>
         </div>
 
         <div class="service-card">
           <div class="service-icon">📹</div>
           <h3>Surveillance Solutions</h3>
-          <p>We provide advanced surveillance solutions, including CCTV monitoring, remote video verification, and tailored camera systems. Our technology-backed services give you real-time insights and continuous oversight of your property.</p>
+          <p>CCTV monitoring, remote verification, and tailored camera systems.</p>
         </div>
       </div>
 
